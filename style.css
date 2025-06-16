@@ -1,0 +1,94 @@
+ 
+ body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1d3557, #457b9d);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #fff;
+    }
+
+    .message-box {
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f1faee;
+        color: #1d3557;
+        padding: 12px 20px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        opacity: 0;
+        transition: all 0.5s ease;
+        z-index: 999;
+        min-width: 240px;
+        margin-bottom: 50px;
+    } 
+    .message-box.show {
+        opacity: 1;
+        }
+
+    .register-form {
+      background: #ffffff10;
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 30px 40px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      position: relative; /* Добавили позиционирование для контейнера */
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .register-form h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #f1faee;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input-group i {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #a8dadc;
+    }
+
+    .input-group input {
+      width: 88%;
+      padding: 12px 12px 12px 36px;
+      border: none;
+      border-radius: 8px;
+      background: #f1faee;
+      color: #1d3557;
+      font-size: 16px;
+    }
+
+    .input-group input:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #a8dadc;
+    }
+
+    .register-form input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #e63946;
+      color: #fff;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .register-form input[type="submit"]:hover {
+      background-color: #d62828;
+    }
